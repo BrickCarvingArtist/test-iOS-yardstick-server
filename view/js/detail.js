@@ -9,7 +9,7 @@ async function getProductDetail(){
 			code,
 			data,
 			message
-		} = await (await fetch(`http://localhost:12321/getProductDetail${location.search}`)).json();
+		} = await (await fetch(`http://test.ikindness.cn/getProductDetail${location.search}`)).json();
 		alert(message);
 		if(code || !data){
 			return;
@@ -27,7 +27,7 @@ buy.addEventListener("click", async _ => {
 			code,
 			data,
 			message
-		} = await (await fetch(`http://localhost:12321/buy${location.search})}&tel=${localStorage.tel || 13000000000}`)).json();
+		} = await (await fetch(`http://test.ikindness.cn/buy${location.search})}&tel=${localStorage.tel || 13000000000}`)).json();
 		alert(message);
 		if(code || !data){
 			return;
