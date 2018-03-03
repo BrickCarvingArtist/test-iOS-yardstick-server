@@ -1,0 +1,29 @@
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	padding-top: 16vh;
+	background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1520073410583&di=650520b429d96dca1eea00956f0cf44d&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimage%2Fc0%253Dshijue1%252C0%252C0%252C294%252C40%2Fsign%3Dad88ad1946086e067ea537086a611181%2F1c950a7b02087bf41fc066c1f8d3572c11dfcfed.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+label{
+	margin-top: 4vh;
+	color: #ffffff;
+	font-size: 2.4vh;
+}
+label:first-of-type{
+	font-size: 4vh;
+}
+button{
+	position: fixed;
+	bottom: 10vh;
+	width: 80vw;
+	height: 8vh;
+	background-color: #ff0033;
+	color: #ffffff;
+	font-size: 2.4vh;
+	line-height: 8vh;
+}

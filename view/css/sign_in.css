@@ -1,0 +1,25 @@
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	padding-top: 64vh;
+	background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1519996193173&di=57706f98072ff977f418746d1f746b7f&imgtype=0&src=http%3A%2F%2Fpic1.16pic.com%2F00%2F48%2F84%2F16pic_4884630_b.jpg);
+	background-size: 100% 100%;
+}
+input[type="tel"], input[type="password"]{
+	margin-bottom: 2vh;
+	width: 80vw;
+	padding: 0 4vw;
+	height: 8vh;
+	font-size: 2.4vh;
+}
+button{
+	width: 80vw;
+	height: 8vh;
+	background-color: #eecc33;
+	color: #ffffff;
+	font-size: 2.4vh;
+	line-height: 8vh;
+}

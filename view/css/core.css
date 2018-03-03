@@ -1,0 +1,46 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-family: "PingFangSC-Regular";
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+em, i{
+	font-style: normal;
+}
+b, strong{
+	font-weight: normal;
+}
+button, input[type="button"]{
+	border: none;
+	background-color: transparent;
+	-webkit-appearance: none;
+}
+
+/* 公用 */
+footer{
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	width: 100vw;
+	height: 6vh;
+	background-color: #cccccc;
+	box-shadow: 0 0 1px 2px #00000099;
+}
+footer i{
+	display: flex;
+	width: 2px;
+	height: 6vh;
+	background-color: #00000099;
+}
+footer a{
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.4vh;
+}
