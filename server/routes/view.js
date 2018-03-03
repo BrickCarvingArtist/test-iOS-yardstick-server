@@ -6,5 +6,9 @@ class View{
 	signIn(){
 		return Promise.resolve();
 	}
+	@render("/", "/web.html")
+	index(){
+		return Promise.resolve();
+	}
 }
 export default View;

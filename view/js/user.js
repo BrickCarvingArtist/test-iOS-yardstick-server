@@ -1,13 +1,13 @@
 import {
 	serialize,
 	createPassiveEvent
-} from "http://localhost:12321/js/utils.js";
+} from "http://test.ikindness.cn/js/utils.js";
 async function getUserInfo(){
 	const {
 		code,
 		data,
 		message
-	} = await (await fetch(`http://localhost:12321/userInfo?tel=${localStorage.tel || 13000000000}`)).json();
+	} = await (await fetch(`http://test.ikindness.cn/userInfo?tel=${localStorage.tel || 13000000000}`)).json();
 	if(code || !data){
 		return alert(message);
 	}
@@ -27,7 +27,7 @@ signOut.addEventListener("click", async _ => {
 		})).json();
 		alert(message);
 		if(code || !data){
-			return;
+			return location.href = "./sign_in.html";
 		}
 		localStorage.removeItem("tel");
 		location.href = "./index.html";
