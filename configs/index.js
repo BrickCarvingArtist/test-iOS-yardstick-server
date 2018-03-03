@@ -2,7 +2,7 @@ module.exports = (env => ({
 	development: {
 		SERVER: {
 			host: "127.0.0.1",
-			port: "12321"
+			port: "12306"
 		},
 		REDIS: {
 			host: "127.0.0.1",
