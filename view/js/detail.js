@@ -9,7 +9,7 @@ async function getProductDetail(){
 			code,
 			data,
 			message
-		} = await (await fetch(`http://localhost:12321/getProductDetail${location.search})}`)).json();
+		} = await (await fetch(`http://localhost:12321/getProductDetail${location.search}`)).json();
 		alert(message);
 		if(code || !data){
 			return;
