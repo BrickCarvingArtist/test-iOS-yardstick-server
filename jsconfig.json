@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"target": "es2017",
+		"experimentalDecorators": true
+	},
+	"include": [
+		"./"
+	],
+	"exclude": [
+		"./node_modules"
+	]
+}
