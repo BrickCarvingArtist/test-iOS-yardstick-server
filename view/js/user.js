@@ -9,7 +9,8 @@ async function getUserInfo(){
 		message
 	} = await (await fetch(`http://test.ikindness.cn/userInfo?tel=${localStorage.tel || 13000000000}`)).json();
 	if(code || !data){
-		return alert(message);
+		alert(message);
+		return location.href = "./sign_in.html";
 	}
 	user.textContent = data.name;
 	tel.textContent = data.tel;
@@ -27,10 +28,10 @@ signOut.addEventListener("click", async _ => {
 		})).json();
 		alert(message);
 		if(code || !data){
-			return location.href = "./sign_in.html";
+			return;
 		}
 		localStorage.removeItem("tel");
-		location.href = "./sign_in.html";
+		location.href = "./home.html";
 	}catch(e){
 		alert("系统故障！");
 	}
