@@ -30,7 +30,7 @@ signOut.addEventListener("click", async _ => {
 			return location.href = "./sign_in.html";
 		}
 		localStorage.removeItem("tel");
-		location.href = "./index.html";
+		location.href = "./sign_in.html";
 	}catch(e){
 		alert("系统故障！");
 	}
