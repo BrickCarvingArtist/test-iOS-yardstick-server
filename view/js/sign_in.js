@@ -23,7 +23,7 @@ signIn.addEventListener("click", async _ => {
 			return;
 		}
 		localStorage.tel = tel.value;
-		location.href = "./index.html";
+		location.href = "./home.html";
 	}catch(e){
 		alert("系统故障！");
 	}
